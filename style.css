@@ -198,10 +198,9 @@ main {
         gap: 3rem;/*Gap pode ser usado tanto para display: grid quanto para display: flex*/
     }
 
-    header {
+    header{
         padding: 0;
     }
-
 
     main {
         display: flex;
