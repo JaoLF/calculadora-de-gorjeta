@@ -9,19 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
-
     <title>Calculadora de gorjeta</title>
 </head>
 
 <body>
     <header>
-        <img src="./images/logo.svg" alt="Logo do Splitter" </header>
+        <img src="./images/logo.svg" alt="Logo do Splitter">
     </header>
     <main>
         <section class="informacoes">
             <form action="conta">
                 <div class="conta">
-                    <label for="">Conta</label>
+                    <label for="conta">Conta</label>
                     <div>
                         <img src="./images/icon-dollar.svg" alt="Icone de cifrão">
                         <input type="number" name="conta" id="conta" placeholder="0">
@@ -29,7 +28,7 @@
                 </div>
 
                 <div class="gorjeta">
-                    <label for="">Selecione a gorjeta %</label>
+                    <label for="outra">Selecione a gorjeta %</label>
                     <div>
                         <input type="button" value="5%">
                         <input type="button" value="10%">
@@ -41,43 +40,38 @@
                 </div>
 
                 <div class="pessoas">
-                    <form action="conta">
-                        <div class="conta">
-                            <label for="pessoas">Quantidade de pessoas</label>
-                            <p id="erro">Não pode ser zero</p>
-                            <div>
-                                <img src="./images/icon-person.svg" alt="Icone dda pessoa">
-                                <input type="number" name="pessoas" id="pessoas" placeholder="0">
-                            </div>
-                        </div>
+                    <div class="textos">
+                        <label for="pessoas">Quantidade de pessoas</label>
+                        <p id="erro">Não pode ser zero</p>
+                        <img src="./images/icon-person.svg" alt="Icone de pessoa">
+                    </div>
+                    <div class="input-box">
+                        
+                        <input type="number" name="pessoas" id="pessoas" placeholder="0">
+                    </div>
                 </div>
             </form>
         </section>
 
         <section class="resultados">
-          <div>
             <div class="gorjeta-total">
                 <p>
-                    <strong>Gorjeta</strong> <br><!--Strong: Deixa em negrito. BR: Pula uma linha-->
+                    <strong>Gorjeta</strong> <br>
                     /pessoa
                 </p>
-
-                <strong>R$ 0.00</strong>
+                <strong>R$0.00</strong>
             </div>
 
-            <div clas="total">
+            <div class="total">
                 <p>
-                    <strong>Total</strong> <br><!--Strong: Deixa em negrito. BR: Pula uma linha-->
+                    <strong>Total</strong> <br>
                     /pessoa
                 </p>
-
-                <strong>R$ 0.00</strong>
+                <strong>R$0.00</strong>
             </div>
-          </div>
 
             <button>Limpar</button>
         </section>
-
     </main>
 </body>
 
